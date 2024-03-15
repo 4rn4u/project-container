@@ -1,0 +1,22 @@
+{
+  "name": "project-container",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4rn4u/project-container.git"
+  },
+  "author": "4rn4u",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4rn4u/project-container/issues"
+  },
+  "homepage": "https://github.com/4rn4u/project-container#readme",
+  "devDependencies": {
+    "electron": "^29.1.4"
+  }
+}
