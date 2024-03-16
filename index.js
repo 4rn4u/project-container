@@ -2,8 +2,9 @@ const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
 const isMac = process.platform === "darwin"
 
+// modify your existing createWindow() function
 const createWindow = () => {
-  const mainWindow = new BrowserWindow({
+  const win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
@@ -11,10 +12,7 @@ const createWindow = () => {
     }
   })
 
-  mainWindow.loadFile('index.html')
-
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  win.loadFile('index.html')
 }
 
 // This method will be called when Electron has finished
