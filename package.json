@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "nodemonConfig": {
+    "exec": "electron .",
+    "watch": [
+      "app",
+      "main.js"
+    ],
+    "ext": "js,json,html"
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -17,6 +25,7 @@
   },
   "homepage": "https://github.com/4rn4u/project-container#readme",
   "devDependencies": {
-    "electron": "^29.1.4"
+    "electron": "^29.1.4",
+    "nodemon": "^3.1.0"
   }
 }
