@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron')
-const path = require('node:path')
+const path = require('path')
 const isMac = process.platform === "darwin"
 
 // modify your existing createWindow() function
