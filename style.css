@@ -23,9 +23,9 @@ body {
     display: flex;
     flex-direction: column; /* Align children vertically */
     text-align: center; /* Ensure text elements are centered */
-  width: calc(100% - 240px); /* Subtract sidebar width from the total width */
-  padding-top: 20px; /* Adjust as needed for spacing from the top */
-  box-sizing: border-box;
+    width: calc(100% - 240px); /* Subtract sidebar width from the total width */
+    padding-top: 20px; /* Adjust as needed for spacing from the top */
+    box-sizing: border-box;
 }
 
 .main-content h1 {
