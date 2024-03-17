@@ -1,33 +1,47 @@
-h1 {
-    text-align: center;
+
+
+body {
+    display: flex;
+    min-height: 100vh; /* Ensure the container fills at least the whole height */
 }
 
 .sidebar {
-    height: 100vh; /* Full-height: remove if you want "auto" height */
-    width: 200px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 50px;
-  }
+  height: 100vh; /* Full-height: remove if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 50px;
+}
+
+.main-content {
+    margin-left: 200px; /* Adjust to match the sidebar width */
+    flex-grow: 1; /* Takes up the remaining space */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    text-align: center; /* Ensure text elements are centered */
+  width: calc(100% - 240px); /* Subtract sidebar width from the total width */
+  padding-top: 20px; /* Adjust as needed for spacing from the top */
+  box-sizing: border-box;
+}
+
+.main-content h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar nav a {
+  padding: 50px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
   
-  .sidebar nav a {
-    padding: 50px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-  }
+.sidebar nav a:hover {
+  background-color: #575757;
+}
   
-  .sidebar nav a:hover {
-    background-color: #575757;
-  }
-  
-  .content {
-    margin-left: 240px; /* Same as the width of the sidebar */
-    padding: 1px 16px;
-    height: 1000px; /* Sample height */
-  }
