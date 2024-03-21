@@ -10,7 +10,7 @@ const createWindow = () => {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     },
-    icon: path.join(__dirname, './assets/icons/coding.png')
+    //icon: path.join(__dirname, './assets/icons/coding.png')
   })
 
   win.loadFile('index.html')
